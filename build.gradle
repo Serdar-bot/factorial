@@ -68,3 +68,4 @@ sonarqube {
         property 'sonar.coverage.exclusions', coverageExclusionList.join(", ")
     }
 }
+
