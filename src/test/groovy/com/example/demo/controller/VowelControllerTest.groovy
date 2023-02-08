@@ -27,7 +27,7 @@ class VowelControllerTest extends Specification {
         def result = mockMvc.perform(get(url)).andReturn()
 
         then:
-        1 * vowelService.calculateAverageNumberOfVowels()
+        2 * vowelService.calculateAverageNumberOfVowels()
 
         def response = result.response
         response.status == HttpStatus.NO_CONTENT.value()
